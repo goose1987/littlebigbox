@@ -1,0 +1,168 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "1 sep 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MOSFET_N Q?
+U 1 1 5403C9BC
+P 4600 2600
+F 0 "Q?" H 4610 2770 60  0000 R CNN
+F 1 "MOSFET_N" H 4610 2450 60  0000 R CNN
+F 2 "~" H 4600 2600 60  0000 C CNN
+F 3 "~" H 4600 2600 60  0000 C CNN
+	1    4600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N Q?
+U 1 1 5403C9CB
+P 6600 2600
+F 0 "Q?" H 6610 2770 60  0000 R CNN
+F 1 "MOSFET_N" H 6610 2450 60  0000 R CNN
+F 2 "~" H 6600 2600 60  0000 C CNN
+F 3 "~" H 6600 2600 60  0000 C CNN
+	1    6600 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N Q?
+U 1 1 5403C9DA
+P 4600 3700
+F 0 "Q?" H 4610 3870 60  0000 R CNN
+F 1 "MOSFET_N" H 4610 3550 60  0000 R CNN
+F 2 "~" H 4600 3700 60  0000 C CNN
+F 3 "~" H 4600 3700 60  0000 C CNN
+	1    4600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N Q?
+U 1 1 5403C9E9
+P 6600 3700
+F 0 "Q?" H 6610 3870 60  0000 R CNN
+F 1 "MOSFET_N" H 6610 3550 60  0000 R CNN
+F 2 "~" H 6600 3700 60  0000 C CNN
+F 3 "~" H 6600 3700 60  0000 C CNN
+	1    6600 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5403CA61
+P 5500 3200
+F 0 "C?" H 5500 3300 40  0000 L CNN
+F 1 "C" H 5506 3115 40  0000 L CNN
+F 2 "~" H 5538 3050 30  0000 C CNN
+F 3 "~" H 5500 3200 60  0000 C CNN
+	1    5500 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L INDUCTOR_SMALL L?
+U 1 1 5403CA77
+P 6150 3200
+F 0 "L?" H 6150 3300 50  0000 C CNN
+F 1 "INDUCTOR_SMALL" H 6150 3150 50  0000 C CNN
+F 2 "~" H 6150 3200 60  0000 C CNN
+F 3 "~" H 6150 3200 60  0000 C CNN
+	1    6150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5403CAA4
+P 6500 4000
+F 0 "#PWR?" H 6500 4000 30  0001 C CNN
+F 1 "GND" H 6500 3930 30  0001 C CNN
+F 2 "" H 6500 4000 60  0000 C CNN
+F 3 "" H 6500 4000 60  0000 C CNN
+	1    6500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5403CAB3
+P 4700 4000
+F 0 "#PWR?" H 4700 4000 30  0001 C CNN
+F 1 "GND" H 4700 3930 30  0001 C CNN
+F 2 "" H 4700 4000 60  0000 C CNN
+F 3 "" H 4700 4000 60  0000 C CNN
+	1    4700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2400 6500 2000
+Wire Wire Line
+	4700 2400 4700 2000
+Wire Wire Line
+	6500 2800 6500 3500
+Wire Wire Line
+	6500 3200 6400 3200
+Connection ~ 6500 3200
+Wire Wire Line
+	5900 3200 5700 3200
+Wire Wire Line
+	5300 3200 4700 3200
+Wire Wire Line
+	4700 2800 4700 3500
+Connection ~ 4700 3200
+Wire Wire Line
+	6500 3900 6500 4000
+Wire Wire Line
+	4700 3900 4700 4000
+Wire Wire Line
+	4400 2600 4200 2600
+Wire Wire Line
+	4400 3700 4200 3700
+Wire Wire Line
+	6800 3700 7000 3700
+Wire Wire Line
+	6800 2600 7000 2600
+Wire Wire Line
+	5100 3200 5100 3500
+Connection ~ 5100 3200
+Wire Wire Line
+	5800 3200 5800 3500
+Connection ~ 5800 3200
+$EndSCHEMATC
